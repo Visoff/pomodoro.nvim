@@ -301,7 +301,7 @@ local function start_pomodoro()
     vim.keymap.set("n", state.keymaps.task_done or "<leader>td", task_done, { buffer = true })
     vim.keymap.set("n", state.keymaps.timer_pause or "<leader>tp", timer_toggle, { buffer = true })
     vim.keymap.set("n", state.keymaps.make_task or "<leader>mt", make_task_request, { buffer = true })
-    vim.keymap.set("n", state.keymaps.make_task or "<leader>upd", update_from_doc, { buffer = true })
+    vim.keymap.set("n", state.keymaps.update or "<leader>upd", update_from_doc, { buffer = true })
 
     render()
 end
