@@ -270,6 +270,7 @@ local function parse_buffer(buf)
 end
 
 local function update_from_doc()
+    state.tasks = {todo = {}, in_progress = {}, done = {}}
     parse_buffer(state.doc.buf)
     render()
 end
